@@ -17,6 +17,13 @@ export const populateDummyData = async () => {
 		description:
 			"Before being born, each person must visit the magical Shop Before Life, where they choose what kind of person they will become down on Earth...",
 	});
+	await Book.create({
+		bookId: 3,
+		title: "Cem_TITLE",
+		author: "CEEEEEEEEEEEEEEEEEEEEEM_author",
+		description:
+			" Cem_DESCRIPTION ...  Cem_DESCRIPTION ...  Cem_DESCRIPTION ...  Cem_DESCRIPTION ...  Cem_DESCRIPTION ...  Cem_DESCRIPTION ... ",
+	});
 	const bookCount = (await Book.findAll()).length;
 	console.log(
 		`📚 ${bookCount} book${bookCount !== 1 ? "s" : ""} added to table`
